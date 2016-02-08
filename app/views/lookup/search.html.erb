@@ -1,0 +1,26 @@
+<div  style="text-align: center; background: rgba(255,255,255,0.7);">
+<h1>Look up a Contact </h1>
+
+
+
+<%= form_tag(results_path) do %>
+
+		<div class ="form-group col-md-6">
+
+			<%= text_field_tag :name, nil, placeholder: "Search by Name", class: "form-control"%>
+		</div>	 
+
+		
+<% end %>	
+
+<%= form_tag(results_path) do %>
+	<div class ="form-group col-md-6">
+		<%= text_field_tag :city, nil, placeholder: "Search by City", class: "form-control"%>
+	</div>
+	 
+	
+<% end %>	
+
+</div>
+
+<p><em> Press "Enter" when done </em></p>
